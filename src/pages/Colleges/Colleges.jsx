@@ -6,7 +6,7 @@ const Colleges = () => {
     const [colleges, setColleges] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/collegeList')
+        fetch('https://college-booking-server-ruby.vercel.app/collegeList')
             .then(res => res.json())
             .then(result => {
                 (result)
@@ -18,7 +18,7 @@ const Colleges = () => {
 
     const handleSearch = () => {
 
-        fetch(`http://localhost:5000/collegeSearch/${search}`)
+        fetch(`https://college-booking-server-ruby.vercel.app/collegeSearch/${search}`)
             .then(res => res.json())
             .then(data => {
                 setColleges(data)

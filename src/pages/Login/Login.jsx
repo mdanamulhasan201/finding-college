@@ -8,12 +8,14 @@ import { useForm } from "react-hook-form";
 import { RiEyeFill, RiEyeOffFill } from "react-icons/ri";
 import { ScaleLoader } from "react-spinners";
 import Swal from "sweetalert2";
+import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { app } from "../../firebase/firebase.confiq";
 
 
 const Login = () => {
     const [error, setError] = useState(null);
 
-    const { loading, setLoading, signIn, signInWithGoogle, resetPassword } =
+    const { loading, setLoading, signIn } =
         useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate()
@@ -43,16 +45,55 @@ const Login = () => {
                     timer: 1500
                 })
                 navigate(from, { replace: true })
-             
+
 
             })
             .catch(error => {
                 console.log(error.message)
                 setError(error.message);
                 setLoading(false)
-            
+
             })
     }
+
+
+    const auth = getAuth(app);
+    const googleProvider = new GoogleAuthProvider();
+    const gitHubProvider = new GithubAuthProvider();
+
+
+
+    // google login
+    const handleGoogleSignIn = () => {
+        setError('')
+
+        signInWithPopup(auth, googleProvider)
+            .then(result => {
+                const user = result.user;
+                navigate(from, { replace: true })
+                // toast.success("Logout Successfully!");
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
+
+    // github login
+    const handleGithubSignIn = () => {
+        signInWithPopup(auth, gitHubProvider)
+            .then(result => {
+                const loggedInUser = result.user;
+                // console.log(loggedInUser)
+                navigate(from, { replace: true })
+                // setSuccess('User has been successfully login')
+
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
 
 
     // handle toggle password visibility
@@ -156,13 +197,13 @@ const Login = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 justify-between  justify-items-center">
 
                         <div>
-                            <button className="flex hover:border-solid p-1 hover:rounded-lg hover:bg-gray-300 "> <FcGoogle className="text-3xl mr-2"></FcGoogle>
+                            <button onClick={handleGoogleSignIn} className="flex hover:border-solid p-1 hover:rounded-lg hover:bg-gray-300 "> <FcGoogle className="text-3xl mr-2"></FcGoogle>
                                 <div><h2 className="font-semibold">Login with Google</h2></div>
                             </button>
                         </div>
 
                         <div >
-                            <button className="flex hover:border-solid p-1 hover:rounded-lg hover:bg-gray-300"> <FaGithub className="text-3xl mr-2"></FaGithub>
+                            <button onClick={handleGithubSignIn} className="flex hover:border-solid p-1 hover:rounded-lg hover:bg-gray-300"> <FaGithub className="text-3xl mr-2"></FaGithub>
                                 <div><h2 className="font-semibold">Login with Github</h2></div>
                             </button>
                         </div>
