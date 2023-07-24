@@ -7,18 +7,19 @@ import Review from './Review';
 const CollegeDetails = () => {
     const details = useLoaderData()
    
-    const { college, admissionDates, researchWorks, collegeDetails, admissionProcess, events, eventsDetails, image, sports, researchHistory } = details
+    const { college,  researchWorks, collegeDetails, admissionProcess, events, eventsDetails, image, sports} = details
 
 
 
 
     const { user } = useContext(AuthContext);
+    console.log(user)
     const [success, setSuccess] = useState('')
     const [error, setError] = useState('')
-    const { register, handleSubmit,  formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
 
     const onSubmit = data => {
-        fetch('http://localhost:5000/review', {
+        fetch('https://college-booking-server-ruby.vercel.app/review', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -38,7 +39,7 @@ const CollegeDetails = () => {
 
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch('https://college-booking-server-ruby.vercel.app/reviews')
             .then(res => res.json())
             .then(result => {
                 (result)
@@ -146,6 +147,14 @@ const CollegeDetails = () => {
                             value={user?.displayName}
                         />
                     </div>
+                    <div className="mb-4 hidden">
+                        <label htmlFor='name' className="text-sm leading-7 text-gray-600">photoURL</label>
+                        <input type="text" id="name" name="name" className="w-full rounded border border-gray-300 bg-white py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200"
+                            {...register("photoURL", { required: true })}
+                            placeholder="Your Name"
+                            value={user?.photoURL}
+                        />
+                    </div>
 
 
 
@@ -161,7 +170,7 @@ const CollegeDetails = () => {
                     </div>
                     <p className="text-green-500 font-bold">{success}</p>
                     <p className="text-red-700 font-bold">{error}</p>
-                    <input className="btn btn-primary btn-block flex mx-auto" value="Feedback" type="submit" />
+                    <input className="btn btn-sm gradient-button w-full text-white" value="Feedback" type="submit" />
 
                 </div>
             </form>
