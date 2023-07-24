@@ -1,0 +1,135 @@
+[
+  {
+    "college": "XYZ University",
+    "admissionDates": "September 2023",
+    "events": ["Freshers' Welcome", "Tech Conference", "Cultural Fest"],
+    "researchHistory": "Over 150 research papers published",
+    "sports": ["Soccer", "Tennis", "Swimming"],
+    "image": "https://www.elmhurst.edu/wp-content/uploads/2020/07/elmhurst-university-gates-v3-hero-image.jpg",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt odio vitae elit congue convallis. Aenean nec orci vitae purus elementum fringilla.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt odio vitae elit congue convallis. Aenean nec orci vitae purus elementum fringilla.",
+    "researchWorks": [
+      "artificial intelligence",
+      "machine learning",
+      "data science"
+    ],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt odio vitae elit congue convallis. Aenean nec orci vitae purus elementum fringilla."
+  },
+
+  {
+    "college": "LMN College",
+    "admissionDates": "October 2023",
+    "events": ["Freshers' Party", "Literary Fest", "Sports Championship"],
+    "researchHistory": "Over 100 research papers published",
+    "sports": ["Cricket", "Badminton", "Table Tennis"],
+    "image": "https://www.timeshighereducation.com/student/sites/default/files/styles/default/public/james_madison_university.jpg?itok=rzNh-kr_",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae lacus id libero dictum lacinia vel nec dolor. Nam et leo et quam vulputate dictum.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae lacus id libero dictum lacinia vel nec dolor. Nam et leo et quam vulputate dictum.",
+    "researchWorks": [
+      "environmental studies",
+      "sustainability",
+      "renewable energy"
+    ],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vitae lacus id libero dictum lacinia vel nec dolor. Nam et leo et quam vulputate dictum."
+  },
+  {
+    "college": "EFG University",
+    "admissionDates": "November 2023",
+    "events": ["Orientation Program", "Tech Summit", "Cultural Night"],
+    "researchHistory": "Over 300 research papers published",
+    "sports": ["Volleyball", "Basketball", "Athletics"],
+    "image": "https://images.hindustantimes.com/img/2022/04/29/1600x900/1c0990c8-286b-11ec-8390-9108a6051a41_1633720405716_1651267903424.jpg",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nulla nisi. Aliquam erat volutpat. Proin vehicula egestas justo vel pharetra.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nulla nisi. Aliquam erat volutpat. Proin vehicula egestas justo vel pharetra.",
+    "researchWorks": [
+      "environmental science",
+      "climate change",
+      "sustainable development"
+    ],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel nulla nisi. Aliquam erat volutpat. Proin vehicula egestas justo vel pharetra."
+  },
+  {
+    "college": "PQR University",
+    "admissionDates": "December 2023",
+    "events": ["Freshers' Welcome", "Tech Expo", "Cultural Fest"],
+    "researchHistory": "Over 50 research papers published",
+    "sports": ["Football", "Badminton", "Swimming"],
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnkUjKvuGjjR9XjxldrHr77MB9ZGErJejNIrt-On-pqmaoKZkUQJsHvSzSuasXtRRdLfk&usqp=CAU",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat scelerisque ex, at iaculis lectus semper nec.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat scelerisque ex, at iaculis lectus semper nec.",
+    "researchWorks": ["health sciences", "genetics", "molecular biology"],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat scelerisque ex, at iaculis lectus semper nec."
+  },
+  {
+    "college": "RST Institute",
+    "admissionDates": "January 2024",
+    "events": ["Orientation Day", "Alumni Meet", "Science Fair"],
+    "researchHistory": "Over 80 research papers published",
+    "sports": ["Basketball", "Cricket", "Table Tennis"],
+    "image": "https://images.unsplash.com/20/cambridge.JPG?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dW5pdmVyc2l0eXxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat velit in fermentum tincidunt.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat velit in fermentum tincidunt.",
+    "researchWorks": [
+      "computer science",
+      "software engineering",
+      "cybersecurity"
+    ],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc feugiat velit in fermentum tincidunt."
+  },
+  {
+    "college": "MNO College",
+    "admissionDates": "February 2024",
+    "events": ["Tech Symposium", "Literary Fest", "Annual Sports Meet"],
+    "researchHistory": "Over 120 research papers published",
+    "sports": ["Soccer", "Volleyball", "Tennis"],
+    "image": "https://www.american.edu/images/video-mobile-640x550-100.jpg",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt, odio eu interdum vehicula, mauris lorem malesuada purus, ac luctus nisi sem eu velit.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt, odio eu interdum vehicula, mauris lorem malesuada purus, ac luctus nisi sem eu velit.",
+    "researchWorks": ["business management", "finance", "marketing"],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum tincidunt, odio eu interdum vehicula, mauris lorem malesuada purus, ac luctus nisi sem eu velit."
+  },
+  {
+    "college": "JKL University",
+    "admissionDates": "March 2024",
+    "events": ["Freshers' Bash", "Cultural Extravaganza", "Science Expo"],
+    "researchHistory": "Over 180 research papers published",
+    "sports": ["Cricket", "Badminton", "Swimming"],
+    "image": "https://www.travelandleisure.com/thmb/E5szi7N2r1eN-8b3vkl5STvWz9o=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/notre-dame-university-COLLEGECAMP0421-039ce0bfd40b4e429b825c6fb6ebfaa6.jpg",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra vehicula lacus sit amet venenatis. Integer a euismod velit.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra vehicula lacus sit amet venenatis. Integer a euismod velit.",
+    "researchWorks": [
+      "environmental studies",
+      "climate change",
+      "sustainability"
+    ],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed viverra vehicula lacus sit amet venenatis. Integer a euismod velit."
+  },
+  {
+    "college": "UVW Institute",
+    "admissionDates": "April 2024",
+    "events": ["Orientation Program", "Tech Summit", "Cultural Night"],
+    "researchHistory": "Over 250 research papers published",
+    "sports": ["Volleyball", "Basketball", "Athletics"],
+    "image": "https://textile.nub.ac.bd/assets/images/slider/Permanent_Campus.jpg",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non nibh sed nunc tempus fermentum.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non nibh sed nunc tempus fermentum.",
+    "researchWorks": ["biotechnology", "genomics", "biochemistry"],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus non nibh sed nunc tempus fermentum."
+  },
+  {
+    "college": "IJK University",
+    "admissionDates": "May 2024",
+    "events": ["Freshers' Welcome", "Tech Expo", "Cultural Fest"],
+    "researchHistory": "Over 300 research papers published",
+    "sports": ["Football", "Badminton", "Swimming"],
+    "image": "https://marvel-b1-cdn.bc0a.com/f00000000234031/www.pacificu.edu/sites/default/files/styles/page_banner/public/Pacific_University_Marsh_Hall_Web_Header.jpg?itok=TUBPCtrq",
+    "admissionProcess": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod sem vitae nibh ullamcorper ullamcorper.",
+    "eventsDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod sem vitae nibh ullamcorper ullamcorper.",
+    "researchWorks": [
+      "computer engineering",
+      "artificial intelligence",
+      "data analytics"
+    ],
+    "collegeDetails": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis euismod sem vitae nibh ullamcorper ullamcorper."
+  }
+]

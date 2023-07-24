@@ -1,0 +1,14 @@
+/* Assuming you have a CSS file for your component, let's call it CollegeCard.css */
+
+/* Add hover styles to the entire card */
+.max-w-md:hover {
+  transform: translateY(-5px); /* Move the card up 5px on hover */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow on hover */
+}
+
+/* Add zoom effect to the image on hover */
+.max-w-md:hover .object-cover {
+  transform: scale(1.1); /* Increase image scale on hover (zoom effect) */
+  transition: transform 0.3s ease; /* Add a smooth transition effect */
+}

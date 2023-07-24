@@ -1,0 +1,20 @@
+.gradient-button {
+    border: none;
+    background: linear-gradient(to right, #0e51d8, #1ec5fa);
+    /* Use appropriate vendor prefixes for cross-browser support */
+    background: -webkit-linear-gradient(to right, #0e51d8, #1ec5fa);
+    background: -moz-linear-gradient(to right, #0e51d8, #1ec5fa);
+    background: -o-linear-gradient(to right, #0e51d8, #1ec5fa);
+    background: -ms-linear-gradient(to right, #0e51d8, #1ec5fa);
+  }
+  
+  .gradient-button:hover {
+    background: linear-gradient(to right, #1ec5fa, #0e51d8);
+    /* Use appropriate vendor prefixes for cross-browser support */
+    background: -webkit-linear-gradient(to right, #1ec5fa, #0e51d8);
+    background: -moz-linear-gradient(to right, #1ec5fa, #0e51d8);
+    background: -o-linear-gradient(to right, #1ec5fa, #0e51d8);
+    background: -ms-linear-gradient(to right, #1ec5fa, #0e51d8);
+    /* Add any other desired styles */
+  }
+  
