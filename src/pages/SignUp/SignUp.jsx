@@ -9,13 +9,17 @@ import { RiEyeFill, RiEyeOffFill } from 'react-icons/ri';
 import { AuthContext } from "../../providers/AuthProvider";
 import { PulseLoader } from 'react-spinners';
 import Swal from "sweetalert2";
+import { GithubAuthProvider, GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
+import { app } from "../../firebase/firebase.confiq";
 
 
 const SignUp = () => {
 
     const [showPassword, setShowPassword] = useState(false);
-    const { loading, setLoading, signInWithGoogle } = useContext(AuthContext);
+    const { loading} = useContext(AuthContext);
     const { createUser } = useContext(AuthContext)
+
+    const [success, setSuccess] = useState('')
 
     const navigate = useNavigate()
     const location = useLocation()
@@ -55,6 +59,45 @@ const SignUp = () => {
                 });
             });
     };
+
+    // sign in with google 
+    const auth = getAuth(app);
+    const provider = new GoogleAuthProvider();
+    const gitHubProvider = new GithubAuthProvider();
+
+    const handleGoogleSignIn = () => {
+        setSuccess('')
+        setError('')
+        signInWithPopup(auth, provider)
+            .then(result => {
+                const user = result.user;
+                setSuccess('User has been successfully login')
+                navigate(from, { replace: true })
+
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+    // git hub login
+
+    const handleGithubSignIn = () => {
+        setSuccess('')
+        setError('')
+        signInWithPopup(auth, gitHubProvider)
+            .then(result => {
+                const loggedInUser = result.user;
+                setSuccess('User has been successfully login', loggedInUser)
+
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
+
+
+
 
     const handleTogglePassword = () => {
         setShowPassword((prevState) => !prevState);
@@ -245,13 +288,13 @@ const SignUp = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 justify-between  justify-items-center">
 
                         <div>
-                            <button className="flex hover:border-solid p-1 hover:rounded-lg hover:bg-gray-300 "> <FcGoogle className="text-3xl mr-2"></FcGoogle>
+                            <button onClick={handleGoogleSignIn} className="flex hover:border-solid p-1 hover:rounded-lg hover:bg-gray-300 "> <FcGoogle className="text-3xl mr-2"></FcGoogle>
                                 <div><h2 className="font-semibold">Login with Google</h2></div>
                             </button>
                         </div>
 
                         <div >
-                            <button className="flex hover:border-solid p-1 hover:rounded-lg hover:bg-gray-300"> <FaGithub className="text-3xl mr-2"></FaGithub>
+                            <button onClick={handleGithubSignIn} className="flex hover:border-solid p-1 hover:rounded-lg hover:bg-gray-300"> <FaGithub className="text-3xl mr-2"></FaGithub>
                                 <div><h2 className="font-semibold">Login with Github</h2></div>
                             </button>
                         </div>

@@ -4,7 +4,7 @@ import Footer from "../pages/Shared/Footer/Footer";
 
 const Main = () => {
     const location = useLocation()
-    console.log(location)
+    // console.log(location)
     const headerFooterHide = location.pathname.includes('signUp')
     const headerFooterHides = location.pathname.includes('login')
     return (

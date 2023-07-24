@@ -19,7 +19,7 @@ const MyAdmissionAdd = () => {
 
     const onSubmit = (data, e) => {
         e.preventDefault();
-        fetch('http://localhost:5000/postCollege', {
+        fetch('https://college-booking-server-ruby.vercel.app/postCollege', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'

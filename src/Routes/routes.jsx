@@ -35,12 +35,12 @@ export const router = createBrowserRouter([
             {
                 path: 'viewDetails/:_id',
                 element: <PrivateRoutes> <CollegeDetails></CollegeDetails> </PrivateRoutes>,
-                loader: ({ params }) => fetch(`http://localhost:5000/collegeDetails/${params._id}`)
+                loader: ({ params }) => fetch(`https://college-booking-server-ruby.vercel.app/collegeDetails/${params._id}`)
             },
             {
                 path: 'admissionDetails/:_id',
                 element: <MyAdmissionAdd></MyAdmissionAdd>,
-                loader: ({ params }) => fetch(`http://localhost:5000/collegeDetails/${params._id}`)
+                loader: ({ params }) => fetch(`https://college-booking-server-ruby.vercel.app/collegeDetails/${params._id}`)
             },
             {
                 path: 'colleges',
@@ -49,11 +49,11 @@ export const router = createBrowserRouter([
 
             {
                 path: 'admission',
-                element: <Admission></Admission>
+                element: <PrivateRoutes><Admission></Admission></PrivateRoutes>
             },
             {
                 path: 'myCollege',
-                element: <MyCollege></MyCollege>
+                element: <PrivateRoutes><MyCollege></MyCollege></PrivateRoutes>
             }
         ],
 
