@@ -12,7 +12,7 @@ const CollegeList = () => {
             .then(res => res.json())
             .then(result => {
                 (result)
-                // console.log(result)
+                console.log(result)
                 setColleges(result.slice(0, 4))
 
             })
@@ -44,8 +44,8 @@ const CollegeList = () => {
                 <div className="container mx-auto gap-5  px-7 grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 sm:grid-cols-1 mb-10">
 
                 {
-                    colleges.map((collegess) => (
-                        <CollegeCard collegess={collegess} key={collegess._id}>
+                    colleges.map((collage) => (
+                        <CollegeCard collage={collage} key={collage._id}>
 
                         </CollegeCard>
 

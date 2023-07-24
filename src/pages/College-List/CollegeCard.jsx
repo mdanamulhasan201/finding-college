@@ -1,7 +1,8 @@
 import { Link } from 'react-router-dom';
 import './CollegeList.css'
 
-const CollegeCard = ({ collegess }) => {
+const CollegeCard = ({ collage }) => {
+    console.log(collage)
     const {
         college,
         admissionDates,
@@ -10,8 +11,8 @@ const CollegeCard = ({ collegess }) => {
         sports,
         image,
         _id,
-        id
-    } = collegess;
+        
+    } = collage;
     return (
         <div className="max-w-md mx-auto  bg-white rounded-xl shadow-lg overflow-hidden">
             <img

@@ -71,13 +71,13 @@ const Navbar = () => {
                                     <NavLink className='text-lg'>Home</NavLink>
                                 </li>
                                 <li className='navStyle'>
-                                    <NavLink className='text-lg'>Colleges</NavLink>
+                                    <NavLink to='/colleges' className='text-lg'>Colleges</NavLink>
                                 </li>
                                 <li className='navStyle'>
-                                    <NavLink className='text-lg'>Admission</NavLink>
+                                    <NavLink to='/admission' className='text-lg'>Admission</NavLink>
                                 </li>
                                 <li className='navStyle'>
-                                    <NavLink className='text-lg'>My College</NavLink>
+                                    <NavLink to='/myCollege' className='text-lg'>My College</NavLink>
                                 </li>
                             </ul>
                         </div>
@@ -98,13 +98,13 @@ const Navbar = () => {
                                 <NavLink to='/' className='text-lg'>Home</NavLink>
                             </li>
                             <li className='navStyle'>
-                                <NavLink className='text-lg'>Colleges</NavLink>
+                                <NavLink to='/colleges' className='text-lg'>Colleges</NavLink>
                             </li>
                             <li className='navStyle'>
-                                <NavLink className='text-lg'>Admission</NavLink>
+                                <NavLink to='/admission' className='text-lg'>Admission</NavLink>
                             </li>
                             <li className='navStyle'>
-                                <NavLink className='text-lg'>My College</NavLink>
+                                <NavLink to='/myCollege' className='text-lg'>My College</NavLink>
                             </li>
                         </ul>
                     </div>

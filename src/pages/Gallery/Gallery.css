@@ -1,0 +1,21 @@
+.image-containerr {
+    position: relative;
+}
+
+.image-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    background-color: #1DBDF8;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.image-containerr:hover .image-text {
+    opacity: 1;
+}
